@@ -1,0 +1,7 @@
+<ul *ngFor="let x of productscard">
+
+    <li>{{x.title}}</li>
+    <li>{{x.price}}</li>
+    <a [routerLink]="['', x.id]">View Details</a>
+    <button (click)="remove(x.id)">remove</button>
+</ul>
